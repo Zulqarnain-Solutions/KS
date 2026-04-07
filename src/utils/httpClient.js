@@ -20,6 +20,7 @@ export async function post(endpoint, data) {
   const response = await fetch(`${API_URL}${endpoint}`, {
     method: "POST",
     credentials: "include", // IMPORTANT for cookies
+    sameSite: "None",  // REQUIRED for cross-origin
     headers: isFormData ? 
     undefined :
     {
@@ -47,6 +48,7 @@ export async function get(endpoint) {
   const response = await fetch(` ${API_URL}${endpoint} `, {
     method: "Get",
     credentials: "include", // IMPORTANT for cookies
+    sameSite: "None",  // REQUIRED for cross-origin
 
   });
 
