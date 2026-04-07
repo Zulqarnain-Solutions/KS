@@ -44,7 +44,7 @@ export async function post(endpoint, data) {
 export async function get(endpoint) {
 
   
-  const response = await fetch(` ${API_BASE_URL}${endpoint} `, {
+  const response = await fetch(` ${API_URL}${endpoint} `, {
     method: "Get",
     credentials: "include", // IMPORTANT for cookies
 
