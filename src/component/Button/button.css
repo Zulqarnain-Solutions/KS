@@ -1,0 +1,17 @@
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #169e53;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: #128847;
+}

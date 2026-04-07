@@ -1,0 +1,119 @@
+ /* body {
+      background: #f5f7f6;
+      color: #333;
+    } */
+
+    /* Header */
+    .enroll-header {
+      background: #0a8f5a;
+      color: white;
+      padding: 20px 40px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    /* Container */
+    .enroll-container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    /* Course Card */
+    .enroll-course-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    /* Thumbnail */
+    .thumbnail {
+      width: 100%;
+      height: 300px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    /* Content */
+    .content {
+      padding: 30px;
+    }
+
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #0a8f5a;
+    }
+
+    .info {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .info div {
+      background: #e9f7f1;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .description {
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    /* List */
+    .list {
+      margin-bottom: 30px;
+    }
+
+    .list h3 {
+      margin-bottom: 10px;
+      color: #0a8f5a;
+    }
+
+    .list ul {
+      padding-left: 20px;
+    }
+
+    .list li {
+      margin-bottom: 8px;
+    }
+
+    /* Enroll Button */
+    /* .enroll-section {
+      text-align: center;
+      margin-top: 20px;
+    } */
+
+    .enroll-btn {
+        font-size: 16px;
+      /* background: #0a8f5a;
+      color: white;
+      padding: 15px 40px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s; */
+    }
+
+    /* .enroll-btn:hover {
+      background: #067a4c;
+      transform: scale(1.05);
+    } */
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .title {
+        font-size: 22px;
+      }
+
+      .thumbnail {
+        height: 200px;
+      }
+    }

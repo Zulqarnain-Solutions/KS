@@ -1,0 +1,164 @@
+/* HEADER BASE */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 11111;
+  /* width: 50vw; */
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+/* CONTAINER */
+
+.header-container {
+
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+/* BRAND */
+
+.brand {
+  line-height: 1.2;
+}
+
+.brand-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.brand-subtitle {
+  font-size: 13px;
+  color: #555;
+}
+
+/* NAVIGATION */
+
+.nav-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+.nav-list a:hover {
+  color:rgb(11, 11, 29);
+}
+
+/* ACTION BUTTONS */
+
+.header-actions {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-login {
+  display: inline-block;
+  background: linear-gradient(130deg, #18a558, #36d874);
+  border: 1px solid #ccc;
+  /* background: #7c3aed; */
+  color: #fff;
+  transition: all 0.25s ease;
+}
+
+.btn-login:hover {
+  transform: scale(1.05);
+  background: linear-gradient(130deg, #169e53, #36d874);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+ 
+}
+
+/* .btn-primary {
+  background: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #0056d2;
+} */
+
+/* HAMBURGER */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* MOBILE */
+
+@media (max-width: 886px) {
+
+  .nav {
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    width: 0;
+    background: rgb(252, 250, 250);
+    overflow: hidden;
+    transition: all 0.9s ease-in;
+  }
+
+  .nav.active {
+    left: 0;
+    width: 100%;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .hamburger {
+    display: flex;
+
+  }
+}
+
+.login-card h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  color: hsl(0, 0%, 12%);
+  margin-bottom: 1rem;
+}
+
+.login-card h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(0, 0%, 12%);
+}
+
+.login-card .des, .err {
+  font-size: 12px;
+  color: #7a7d85;
+  margin-bottom: 18px;
+}
