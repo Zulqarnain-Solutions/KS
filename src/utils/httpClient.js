@@ -15,12 +15,11 @@ export async function post(endpoint, data) {
   // Here we are checking is data plain text obj or have File 
   // If have Plain obj then add content type ...json 
   const isFormData = data instanceof FormData;
-
-  console.log("hello");
+  console.log(isFormData);
   const response = await fetch(`${API_URL}${endpoint}`, {
     method: "POST",
     credentials: "include", // IMPORTANT for cookies
-    sameSite: "None",  // REQUIRED for cross-origin
+    // sameSite: "None",  // REQUIRED for cross-origin
     headers: isFormData ? 
     undefined :
     {
@@ -35,7 +34,7 @@ export async function post(endpoint, data) {
     throw new Error(result.message || "Something went wrong");
   }
 
-  console.log(result);
+  // console.log(result);
   return result;
 }
 

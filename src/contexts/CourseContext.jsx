@@ -26,7 +26,7 @@ export function CourseProvider({children}) {
         loadCourses();
     }, [])
   
-    console.log(course?.data);
+    // console.log(course?.data);
     return (
         <CourseContext.Provider
         value={{course}}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { sendMessage } from "../../api/authApi";
-import Model from "../Header/Model";
+import Model from "../layout/Header/Model";
 
 export default function ContactForm() {
 

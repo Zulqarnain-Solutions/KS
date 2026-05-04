@@ -3,9 +3,9 @@ import './enrollment.css'
 import CoursesImg from '/CoursesImg.jpg'
 import { useLocation } from 'react-router-dom'
 import { enroll } from '../../api/authApi';
-import Model from '../../component/Header/Model';
+import Model from '../../component/layout/Header/Model.jsx';
 import { useAuth } from '../../contexts/AuthContext';
-import Login from "../../component/Login/Login.jsx"
+import Login from "../../features/Login/Login.jsx"
 
 export default function Enrollment() {
 

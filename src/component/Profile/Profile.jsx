@@ -27,11 +27,11 @@ export default function Profile() {
 
     if(e.target.files?.length > 0){
       let file = e.target.files?.[0];
-      // let file = e.target.files?.[0].name;
-      console.log(file);
-      // console.log(e.target.files[0].name)
-      console.log(URL.createObjectURL(file));
-      // setFileName(e.target.files[0].name);
+     
+    //  console.log(file);
+     
+    //  console.log(URL.createObjectURL(file));
+      
       setAvatar(file);
       setFileName(URL.createObjectURL(file));
       return
@@ -45,26 +45,28 @@ export default function Profile() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Updated Data:", formData);
+   /// console.log("Updated Data:", formData);
 
     try {
+
+      
       // console.log({...formData, avatar: fileName});
       const form = new FormData();
       form.append("userName", formData.userName);
       form.append("email", formData.email);
 
       if (avatar) {
-        form.append("avatar", avatar); // ✅ THIS is what multer needs
+        form.append("avatar", avatar); // THIS is what multer needs
       }
-      // form.append("name", "Hi")
-console.log([...form.entries()])
-// for (let pair of form.entries()) {
-//   console.log(pair);
-// }
+      // This is for displaying form values pairs
+      // console.log([...form.entries()])
+      // for (let pair of form.entries()) {
+      //   console.log(pair);
+      // }
       const response = updateUserDetails(form);
       
     } catch (error) {
-      console.log("EEEEEEEEE", error)
+      console.log("Error during update profile", error)
     }
     setIsEditing(false);
   };
